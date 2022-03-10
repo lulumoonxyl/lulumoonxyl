@@ -1,0 +1,7 @@
+Get the heading direction from [0 180] [-180 0] from x_spine and y_spine
+relative_probability of heading direction is just the time in deg/total time for one larva
+vector is [0 -1]
+         / vector from xspine and yspine (angle is calculated clockwise)
+        /
+(angle)/
+-------(-1,0)
