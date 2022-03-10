@@ -1,0 +1,13 @@
+In the code_for_trajectory_heatmap_trackingtime_PI
+we change the input 
+edge, ns, both_ns, both_edge, both-->you want to eliminate the first 120s or edge or not-->
+if yes, input the correct number, both will be 'y' or []
+tt_plot,heatmap,centered_plot,trajectory,PI_plot-->whether you want to plot these or not-->'y' or []
+
+this code will also save the PI mean and PI for each larvae in the folder 'PI_data',
+you need to change the name_of_folder and outdir based on your folder 
+
+PI:v_x/speed for each larvae
+heatmap: count how many times each larvae cross this specific (x,y) region 
+
+*all data eliminate trajectories with tracking time less than 10s
