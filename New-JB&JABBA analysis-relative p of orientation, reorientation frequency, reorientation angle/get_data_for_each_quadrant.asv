@@ -1,0 +1,5 @@
+function data_split_q=get_data_for_each_quadrant(data_split_both,str)
+fn=fieldnames(data_split_both);
+idx=find(contains(fn,str));
+data_spli
+end 
