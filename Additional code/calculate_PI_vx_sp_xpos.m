@@ -1,6 +1,7 @@
 function [dat_grouped,PI_x_mean,PI_x_sem]=calculate_PI_vx_sp_xpos(dat_grouped,xpos)
 %this function will get the PI based on the x position
-
+%you can place this function after the calculate_PI_vx_sp function
+%xpos will just be 0:xbins:220; if xbins=20, xpos=0:20:220
 l=length(xpos)-1;
 dat_grouped.PI_x_larva=cell(l,1);
 for i=1:l
