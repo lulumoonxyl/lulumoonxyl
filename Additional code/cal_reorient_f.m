@@ -1,15 +1,18 @@
 function [data,tf_mean,tfl_mean,deg_mean]=cal_reorient_f(turn_x_or_pre_deg, ...
     x_or_heading_direction,et,reorient_deg_abs,bins,deg_large,x_or_theta)
+%using JB and JAABA data to calculate the turning frequency
+%based on xpos or heading direction
 
 %if we want to get tf based on x, we need to put turn_x and x as the first
 %2 inputs
+
 %if based on heading direction, we need to put pre_deg and heading
 %direction as the first 2 inputs
 
 %deg_large is the degree that defines large turning, ex.
 %deg_large=60-->any turning event with reorient_deg_abs>=60 is considered
 %as large turning event;
-
+%reorient_deg_abs is the absolute reorientation angle for each turning events
 %x_or_theta tells us whether we would calculate the turning frequency,
 %large turning freuquency, reorientation angle as a function of x or theta
 %('x' or 't')
